@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Swapping the Image Source</title>
+    <script type="text/javascript">
+      function swapImages(){
+        document.getElementById('img1').src="Img/img2.gif";
+      }
+      function swapAgain(){
+        document.getElementById('img1').src="Img/img1.jpg";
+      }
+      function Yes(){
+        alert("My Image")
+      }
+    </script>
+  </head>
+  <body>
+    <img  src="Img/img1.jpg" id="img1" onmouseover="swapImages()" onmouseout="swapAgain()" onclick="Yes()" />
+  </body>
+</html>
