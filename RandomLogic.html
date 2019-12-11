@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Random Logic</title>
+<script type="text/javascript">
+    function generateNumber(){
+      var num = parseInt(Math.random() * 20) + 1;
+      document.getElementById("number").innerHTML = num;
+
+      if(num >= 20){
+        document.getElementById("logic").innerHTML = "You rolled Above average";
+      }else if(num >= 5){
+        document.getElementById("logic").innerHTML = "An Average Day";
+      }
+
+      else{
+        document.getElementById("logic").innerHTML = "You might be having a bad day";
+      }
+    }
+
+</script>
+  </head>
+  <body>
+    <div>Your Number Is: <span id="number"></span></div>
+      <button type="button" onclick="generateNumber()">Generate</button></br>
+      <div id="logic"></div>
+
+      </div>
+  </body>
+</html>
