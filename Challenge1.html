@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>QUIZ</title>
+      <script type="text/javascript">
+        function Yes(){
+          var Age = document.getElementById("Age").value;
+          var Years = document.getElementById("Years").value;
+          var combo;
+            if (Age >= 18 && Years >= 12){
+              alert("You Graduated")
+            }
+            else{
+              alert("Get to Class!")
+            }
+        }
+      </script>
+  </head>
+  <body>
+    Age: <input type="text" name="Age" id="Age"><br />
+    Years of Education: <input type="text" name="Years of education" id="Years"><br />
+    <button type="button" name="Yes" onclick="Yes()">What Should I do?
+  </body>
+</html>
