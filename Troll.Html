@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script type="text/javascript">
+      function one(){
+        window.open("RandomLogic.html")
+        self.close()
+      }
+      function Question(){
+        document.getElementById("Shhh").innerHTML = "Are You Sure?";
+        document.getElementById("question").setAttribute( "onClick", "javascript: two();" );
+      }
+      function two(){
+        document.getElementById("Shhh").innerHTML = "Are You Positive?";
+        document.getElementById("question").setAttribute( "onClick", "javascript: three();" );
+      }
+      function three(){
+        document.getElementById("Shhh").innerHTML = "Are You Really really sure??";
+        document.getElementById("question").setAttribute( "onClick", "javascript: four();" );
+        document.getElementById("question").innerHTML = "JUST GET ON WITH IT!!";
+      }
+    </script>
+  </head>
+  <body>
+
+    <div>
+      <p id="Shhh" onClick="one()">Are Your Ready<p>
+    <button type="button" name="button" id="question" onclick="Question()">yes</button>
+  </div>
+  </body>
+</html>
